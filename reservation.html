@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation.css">
+    <title>Document</title>
+</head>
+<body>
+    
+  <header>
+    <div class="logo">
+        <a href="index.html"><span>FAB</span>TRAVEL</a>
+      </div>
+  </header>
+
+
+
+  <!-- ... -->
+
+  <section class="reservation-form">
+    <h2>Créer une reservation</h2>
+    <form action="/path_to_server_side_script" method="post">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Prenom:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="reservation_date" required>
+        </div>
+
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="lastname">Nom:</label>
+          <input type="text" id="lastname" name="lastname" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Heure:</label>
+          <input type="time" id="time" name="reservation_time" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Téléphone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+      <div class="form-row">
+
+        <div class="form-group">
+            <label for="people">Nombre de personnes:</label>
+            <input type="number" id="people" name="number_of_people" required>
+          </div>
+        </div>
+      </div>
+
+
+
+      <input type="submit" value="Reserver" class="book-btn">
+    </form>
+  </section>
+
+  <!-- ... -->
+
+
+
+  <section class="reservation-list">
+    <h2>Liste des reservations</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Heure</th>
+          <th>Prenom</th>
+          <th>Nombre de personnes</th>
+          <th>Téléphone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example reservations -->
+        <tr>
+          <td>2023-08-07</td>
+          <td>19:00</td>
+          <td>Ndouga Fabienne</td>
+          <td>4</td>
+          <td>+237 656 59 39 84</td>
+        </tr>
+        <!-- More reservations can be added here -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="reservatuion.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

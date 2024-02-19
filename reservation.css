@@ -1,0 +1,138 @@
+/* Color Palette */
+:root {
+    --primary-color: #23D5E2;
+    /* Some shade of blue */
+    --secondary-color:#f4f807;
+    /* Dark shade for contrast */
+    --accent-color: #0F5E63;
+    /* Accent color, red for emphasis */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  header .logo a {
+    font-size: 25px;
+    color: #f4f807;
+  }
+  header .logo a span {
+    color: #fff;
+  }
+  
+  header {
+    background-color: #111;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  h1,
+  h2 {
+    color: var(--accent-color);
+  }
+  
+  .reservation-form,
+  .reservation-list {
+    background-color: var(--secondary-color);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid var(--accent-color);
+  }
+  
+  th,
+  td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+  }
+  
+  /* ... */
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    flex: 1;
+    /* Each .form-group element will take up half the space minus the margin */
+    margin-right: 10px;
+  }
+  
+  .form-group:last-child {
+    margin-right: 0;
+    /* Remove margin from the last .form-group element in each row */
+  }
+  
+  /* ... existing styles ... */
+  
+  .book-btn {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    /* white text color */
+    border: none;
+    /* remove default border */
+    padding: 10px 15px;
+    /* add some padding */
+    border-radius: 5px;
+    /* rounded corners */
+    cursor: pointer;
+    /* hand cursor on hover */
+    margin-left: auto;
+    /* push button to the right */
+    display: block;
+    /* make it a block element */
+  }
+  
+  /* Hover effect for the button */
+  .book-btn:hover {
+    background-color: var(--primary-color);
+    /* change to another color in your palette */
+  }
+  @media (max-width:768px) {
+    .reservation-form,
+  .reservation-list {
+    background-color: var(--secondary-color);
+    margin: 20px auto;
+    padding: 20px;
+    width: 69%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  th{
+    
+    font-size: 10px;
+  }
+  td{
+    font-size: 9px;
+  }
+  
+  }
